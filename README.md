@@ -14,3 +14,5 @@ go- and godoc-invisible preamble, unifying the program and the documentation in 
 forming a minimally capable literate programming environment.
 
 The system uses FUSE on Linux and OSX and is in the early stages of development.
+
+Read msfs.go.pdf next.
