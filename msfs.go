@@ -139,10 +139,13 @@ Chief Cypherpunk and Brewmaster, Kuracali Sake and Beer Brewery}
 	//- \item RSA/DSA certificates provide user identity and introduction
 	//- \item Symmetric-key ciphers provide efficiency and security
 	//- \item Hash algorithms provide object reference and retrieval
+	//- \item Content-Addressable Storage serializes and persists data to block storage
 	//- \end{itemize}
 
-	//- Hard drive sectors are the shared resource in the case of the \texttt{msfs} file system and a serialization
-	//- scheme allows multiple readers and writers of the underlying block store. 
+	//- A content-addressable hash store is the shared resource in the case of the \texttt{msfs} file system. 
+	//-  The hash store is not a privileged agent--it is not given the ability to decrypt stored values unless the 
+	//- values are intended to be publically accessible. The hash store serializes
+	//- the access requests of multiple readers and writers and persists the values to block storage.  
 
 	//- The theory of operations can be further broken down as follows:
 
